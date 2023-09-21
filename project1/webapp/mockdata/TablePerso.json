@@ -1,0 +1,15 @@
+{
+    "items": [
+        {"firstName": "Peter", "lastName": "Mueller", "size": "1.75", "city": "Walldorf"},
+        {"firstName": "Petra", "lastName": "Maier", "size": "1.85", "city": "Walldorf"},
+        {"firstName": "Thomas", "lastName": "Smith", "size": "1.95", "city": "Walldorf"},
+        {"firstName": "John", "lastName": "Williams", "size": "1.65", "city": "Walldorf"},
+        {"firstName": "Maria", "lastName": "Jones", "size": "1.55", "city": "Walldorf"}
+    ],
+    "columns": [
+        {"key": "firstName_col", "label": "First Name", "path": "firstName"},
+        {"key": "lastName_col", "label": "Last Name", "path": "lastName"},
+        {"key": "city_col", "label": "City", "path": "city"},
+        {"key": "size_col", "label": "Size", "path": "size"}
+    ]
+}

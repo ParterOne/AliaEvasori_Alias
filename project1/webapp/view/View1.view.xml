@@ -1,0 +1,55 @@
+<mvc:View
+    height="100%"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.ui.table"
+    xmlns:m="sap.m"
+    xmlns:columnmenu="sap.m.table.columnmenu"
+    xmlns:sap.ui.fl="sap.ui.fl"
+    xmlns:sap.ui.dt="sap.ui.dt"
+    xmlns:vm="sap.ui.fl.variants"
+    controllerName="project1.controller.View1">
+
+    <m:Page showHeader="false">
+        <m:Bar>
+            <m:contentLeft><m:Title text="Ciao"></m:Title></m:contentLeft>
+        </m:Bar>
+        <Table id="evasoriTable" visibleRowCountMode="Auto" ariaLabelledBy="title" sap.ui.fl:flexibility="sap/m/flexibility/EngineFlex" rows="{/items}">
+            <extension>
+                <m:OverflowToolbar>
+                    <m:Title id="title" text="Persons"/>
+                    <m:ToolbarSeparator/>
+                    <m:ToolbarSpacer/>
+                    <m:Button icon="sap-icon://action-settings" press="openPersoDialog"/>
+                </m:OverflowToolbar>
+            </extension>
+            <columns>
+                <Column id="firstName_col" sortProperty="firstName" width="11rem" >
+                    <m:Label text="First Name" />
+                    <template>
+                        <m:Text text="{firstName}"/>
+                    </template>
+                </Column>
+                <Column id="lastName_col" sortProperty="lastName" width="11rem" >
+                    <m:Label text="Last Name" />
+                    <template>
+                        <m:Text text="{lastName}"/>
+                    </template>
+                </Column>
+                <Column id="city_col" sortProperty="city" width="11rem" >
+                    <m:Label text="City" />
+                    <template>
+                        <m:Text text="{city}"/>
+                    </template>
+                </Column>
+                <Column id="size_col" sortProperty="size" width="11rem" visible="false">
+                    <m:Label text="Size" />
+                    <template>
+                        <m:Text text="{size}"/>
+                    </template>
+                </Column>
+            </columns>
+        </Table>
+
+    </m:Page>
+
+</mvc:View>
